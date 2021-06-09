@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Electrical View Controller-->
+        <scene sceneID="zx8-Fo-Xc9">
+            <objects>
+                <viewController storyboardIdentifier="electricalStoryboad" id="GjU-yc-33N" customClass="ElectricalViewController" customModule="our_spaceship" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RbK-1X-yP0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here is the electrical room" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ec9-ga-VIj">
+                                <rect key="frame" x="17" y="430" width="380.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's directly have access to" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxl-JO-6Nm">
+                                <rect key="frame" x="17" y="474" width="380.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HF-Pw-GVv">
+                                <rect key="frame" x="17" y="575.5" width="166" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Fuel room                    &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToFuel:" destination="GjU-yc-33N" eventType="touchUpInside" id="5Ny-tT-8dm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYZ-VB-QhC">
+                                <rect key="frame" x="17" y="518.5" width="168" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Control room               &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToControl:" destination="GjU-yc-33N" eventType="touchUpInside" id="FwD-1g-PmA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c1C-gb-jpE"/>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.015686274510000001" blue="0.24161353990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uYZ-VB-QhC" firstAttribute="leading" secondItem="vxl-JO-6Nm" secondAttribute="leading" id="D0C-zl-VNg"/>
+                            <constraint firstItem="vxl-JO-6Nm" firstAttribute="leading" secondItem="ec9-ga-VIj" secondAttribute="leading" id="IQ5-cm-kjZ"/>
+                            <constraint firstItem="4HF-Pw-GVv" firstAttribute="top" secondItem="uYZ-VB-QhC" secondAttribute="bottom" constant="25" id="L9F-hl-LNO"/>
+                            <constraint firstItem="vxl-JO-6Nm" firstAttribute="trailing" secondItem="ec9-ga-VIj" secondAttribute="trailing" id="Ldn-x6-wsr"/>
+                            <constraint firstItem="4HF-Pw-GVv" firstAttribute="leading" secondItem="vxl-JO-6Nm" secondAttribute="leading" id="NfX-FG-EDn"/>
+                            <constraint firstItem="ec9-ga-VIj" firstAttribute="centerY" secondItem="RbK-1X-yP0" secondAttribute="centerY" id="fZx-gO-wkG"/>
+                            <constraint firstItem="ec9-ga-VIj" firstAttribute="centerX" secondItem="RbK-1X-yP0" secondAttribute="centerX" id="i3V-n3-JHx"/>
+                            <constraint firstItem="vxl-JO-6Nm" firstAttribute="top" secondItem="ec9-ga-VIj" secondAttribute="bottom" constant="8" symbolic="YES" id="jzV-z7-foc"/>
+                            <constraint firstItem="uYZ-VB-QhC" firstAttribute="top" secondItem="vxl-JO-6Nm" secondAttribute="bottom" constant="25" id="uMY-wP-cU1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v34-kr-yzl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="114"/>
+        </scene>
+    </scenes>
+</document>
